@@ -1,11 +1,16 @@
+import type { Preview } from "@storybook/vue3";
+import '../src/assets/colors.scss';
+import '../src/assets/main.css';
 
-// Replace your-framework with the framework you are using (e.g., react, vue3)
-import { Preview } from '@storybook/your-framework';
- 
-import '../src/styles/global.css';
- 
 const preview: Preview = {
-  parameters: {},
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+  },
 };
- 
+
 export default preview;

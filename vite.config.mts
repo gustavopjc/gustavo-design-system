@@ -10,9 +10,7 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Vue({
-      template: { transformAssetUrls },
-    }),
+    Vue(),
     Components(),
     ViteFonts({
       google: {

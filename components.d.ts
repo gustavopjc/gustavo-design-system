@@ -7,7 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    GButton: typeof import('./src/components/button/GButton.vue')['default']
+    GButton: typeof import('./src/components/GButton/GButton.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
   }
 }
