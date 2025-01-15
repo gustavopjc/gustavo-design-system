@@ -21,7 +21,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "rollup": "rollup -c --bundleConfigAsCjs",
-    "storybook": "storybook dev -p 6006",
+    "sb": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
