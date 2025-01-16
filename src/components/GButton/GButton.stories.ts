@@ -18,6 +18,7 @@ const meta = {
     size: { control: 'select', options: ['x-small', 'small', 'medium', 'large', 'x-large'] },
     color: { control: 'color' },
     disabled: { control: 'boolean' },
+    loading: { control: 'boolean' },
   },
   args: {
     onClick: fn()
@@ -51,5 +52,11 @@ export const Disabled: Story = {
 export const Small: Story = {
   args: {
     size: 'small',
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    loading: true,
   },
 };
